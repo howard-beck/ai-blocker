@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "AI Blocker",
+    "version": "1.0",
+  
+    "description": "Block Google Search AI and ChatGPT",
+  
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.google.com/*",
+                "*://*.chatgpt.com/*"
+            ],
+            "js": [
+                "./google.js",
+                "./chatgpt.js"
+            ]
+        }
+    ],
+
+    "web_accessible_resources": [
+        "clown_emoji.jpg"
+    ]
+}
