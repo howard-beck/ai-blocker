@@ -1,4 +1,4 @@
-url = window.location.href;
+var url = window.location.href;
 
 if (url.indexOf("google.com/search") != -1) {
     
